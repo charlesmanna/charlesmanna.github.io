@@ -1,0 +1,133 @@
+body {
+    position: absolute;
+    margin: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #E5DDCC;
+}
+
+p, a {
+  color: #333333;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  cursor: default;
+  user-select: none;
+  text-decoration: none;
+}
+
+#contentbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#backbuttondiv {
+  margin-left: 5%;
+  margin-right: 5%;
+  white-space: nowrap;
+  animation: fadeInRight 2s;
+}
+
+#backbutton {
+  font-size: 25px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#backbutton:hover {
+  color: #FDFDFD;
+  transition: .4s;
+}
+
+#aboutpicdiv {
+  width: 35%;
+  border-radius: 50%;
+  overflow: hidden;
+  border-width: 5px;
+  border-color: #B7A196;
+  border-style: solid;
+  animation: fadeInRight 2s;
+}
+
+#aboutpic {
+  width: 100%;
+}
+
+#info {
+  position: absolute;
+  width: 40%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 70%;
+  justify-content: center;
+  animation: fadeInDown 2s;
+}
+
+#aboutme {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #994636;
+  font-size: 45pt;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  top: 40px;
+}
+
+.link {
+  font-size: 15pt;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.link:hover {
+  color: #FDFDFD;
+  transition: .4s;
+}
+
+.dot {
+  background: #333333;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
